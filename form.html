@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <head>
     <title>form tag</title>
 </head>
+
 <body>
-    <form action="save-data.html" method="post">
+    <form action="save-data.html" method="get">
         <div>
             <label for="fnId">First Name:</label>
             <input type="text" id="fnId" name="firstName">
@@ -37,16 +39,46 @@
             <label for="frenchId">French</label>
         </div>
         <br>
-        <select name="className" id="classId">
-            <option value="math" selected>Math class</option>
-            <option value="physics">Physics class</option>
-            <option value="biology">Biology class</option>
-        </select>
-        <br><br>
+        <div>
+            <!-- <select name="className" id="classId" size="5" multiple> -->
+            <select name="className" id="classId">
+                <option value="math" selected>Math class</option>
+                <option value="physics">Physics class</option>
+                <option value="biology">Biology class</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <textarea name="about" id="aboutId" cols="30" rows="10" maxlength="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="fileId">Your Avatar: </label>
+            <input type="file" id="fileId" name="avatar">
+        </div>
+        <br>
+        <div>
+            <!-- 232ac200 -->
+            <label for="colorId">Whats your favorite color? </label>
+            <input type="color" value="#2ac200" id="colorId" name="colorPicker">
+        </div>
+        <br>
+        <div>
+            <label for="birthDateId">Birth Date: </label>
+            <input type="date" value="2020-12-30" id="birthDateId" name="datePicker">
+        </div>
+        <br>
+        <div>
+            <label for="meeting-time">Choose a time for your appointment:</label>
+            <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+                min="2018-06-07T00:00" max="2018-06-14T00:00">
+        </div>
+        <br>
         <div>
             <input type="submit" value="Send information!">
             <input type="reset" value="Clear">
         </div>
     </form>
 </body>
+
 </html>
