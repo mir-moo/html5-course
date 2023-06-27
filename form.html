@@ -5,8 +5,8 @@
 </head>
 
 <body>
-    <!-- <form action="save-data.html" method="post"> -->
-    <form action="mailto:mirmoo.git@gmail.com" method="POST" enctype="text/plain">
+    <form action="save-data.html" method="post">
+    <!-- <form action="mailto:mirmoo.git@gmail.com" method="POST" enctype="multipart/form-data"> -->
         <div>
             <label for="fnId">First Name:</label>
             <input type="text" id="fnId" name="firstName" required placeholder="first name">
@@ -93,6 +93,10 @@
         <div>
             <label for="email">Email: </label>
             <input type="email" name="email-address" id="email" placeholder="username@gamil.com">
+        </div>
+        <br>
+        <div>
+            <input type="hidden" id="hiddenValue" name="hiddenKey" value="this is hidden value">
         </div>
         <br>
         <div>
