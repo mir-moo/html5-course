@@ -5,20 +5,21 @@
 </head>
 
 <body>
-    <form action="save-data.html" method="get">
+    <!-- <form action="save-data.html" method="post"> -->
+    <form action="mailto:mirmoo.git@gmail.com" method="POST" enctype="text/plain">
         <div>
             <label for="fnId">First Name:</label>
-            <input type="text" id="fnId" name="firstName">
+            <input type="text" id="fnId" name="firstName" required placeholder="first name">
         </div>
         <br>
         <div>
             <label for="lnId">Last Name:</label>
-            <input type="text" id="lnId" name="lastName">
+            <input type="text" id="lnId" name="lastName" required placeholder="last name">
         </div>
         <br>
         <div>
             <label for="passId">Password:</label>
-            <input type="password" id="passId" name="password">
+            <input type="password" id="passId" name="password" required placeholder="your password">
         </div>
         <br>
         <div>
@@ -32,7 +33,7 @@
             <input type="checkbox" id="englishId" name="englishName" value="english">
             <label for="englishId">English</label>
 
-            <input type="checkbox" id="farsiId" name="farsiName" value="farsi">
+            <input type="checkbox" id="farsiId" name="farsiName" value="farsi" required>
             <label for="farsiId">Farsi</label>
 
             <input type="checkbox" id="frenchId" name="frenchName" value="french">
@@ -49,12 +50,12 @@
         </div>
         <br>
         <div>
-            <textarea name="about" id="aboutId" cols="30" rows="10" maxlength="10"></textarea>
+            <textarea name="about" id="aboutId" cols="30" rows="10" maxlength="550" required placeholder="write somthing about yourself..."></textarea>
         </div>
         <br>
         <div>
             <label for="fileId">Your Avatar: </label>
-            <input type="file" id="fileId" name="avatar">
+            <input type="file" id="fileId" name="avatar" required>
         </div>
         <br>
         <div>
@@ -69,9 +70,29 @@
         </div>
         <br>
         <div>
+            <!-- value="2018-06-12T19:30" -->
             <label for="meeting-time">Choose a time for your appointment:</label>
-            <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
-                min="2018-06-07T00:00" max="2018-06-14T00:00">
+            <input type="datetime-local" id="meeting-time" name="meeting-time" min="2018-06-07T00:00"
+                max="2018-06-14T00:00" required>
+        </div>
+        <br>
+        <div>
+            <!-- readonly input -->
+            <label for="readOnlyTextInput"></label>
+            <input type="text" id="readOnlyTextInput" name="readonly-text-input" value="this is readonly input"
+                readonly>
+        </div>
+        <br>
+        <div>
+            <!-- disabled input -->
+            <label for="disabledTextInput"></label>
+            <input type="text" id="disabledTextInput" name="disabled-text-input" value="this is disabled input"
+                disabled>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email-address" id="email" placeholder="username@gamil.com">
         </div>
         <br>
         <div>
