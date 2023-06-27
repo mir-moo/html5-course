@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>form tag</title>
+</head>
+<body>
+    <form action="save-data.html" method="post">
+        <div>
+            <label for="fnId">First Name:</label>
+            <input type="text" id="fnId" name="firstName">
+        </div>
+        <br>
+        <div>
+            <label for="lnId">Last Name:</label>
+            <input type="text" id="lnId" name="lastName">
+        </div>
+        <br>
+        <div>
+            <label for="passId">Password:</label>
+            <input type="password" id="passId" name="password">
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="maleGenderId" name="gender" value="Male">
+            <label for="maleGenderId">Male</label>
+            <input type="radio" id="femaleGenderId" name="gender" value="Female">
+            <label for="femaleGenderId">Female</label>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="englishId" name="englishName" value="english">
+            <label for="englishId">English</label>
+
+            <input type="checkbox" id="farsiId" name="farsiName" value="farsi">
+            <label for="farsiId">Farsi</label>
+
+            <input type="checkbox" id="frenchId" name="frenchName" value="french">
+            <label for="frenchId">French</label>
+        </div>
+        <br>
+        <select name="className" id="classId">
+            <option value="math" selected>Math class</option>
+            <option value="physics">Physics class</option>
+            <option value="biology">Biology class</option>
+        </select>
+        <br><br>
+        <div>
+            <input type="submit" value="Send information!">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+</html>
